@@ -37,15 +37,15 @@ class FossilEnergySpider(Spider):
                 elif i >= 39 and i <=50:
                     period_year = "".join([period," " ,y3[0]])
 
-            # Make and yield an item
-            item = FossilEnergyOldItem()
-            item['period'] = period_year
-            item['coal'] = coal
-            item['petro_liquids'] = petro_liquids
-            item['petro_coke'] = petro_coke
-            item['natural_gas'] = natural_gas
-            item['other_gas'] = other_gas
-            item['nuclear'] = nuclear
+                # Make and yield an item
+                item = FossilEnergyOldItem()
+                item['period'] = period_year
+                item['coal'] = coal
+                item['petro_liquids'] = petro_liquids
+                item['petro_coke'] = petro_coke
+                item['natural_gas'] = natural_gas
+                item['other_gas'] = other_gas
+                item['nuclear'] = nuclear
 
             yield item
 
